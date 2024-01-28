@@ -1,10 +1,32 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Hey, Soy Iñaki Goicoechea</h1>
-	</main>
+  <main>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+        Iñaki Goicoechea <a
+          href="https://www.linkedin.com/in/i%C3%B1aki-goicoechea-4636b9236/"
+		  target="_blank"
+		  rel="noopener"
+		  class="flex justify-center items-center"
+        >
+    	    
+            <Badge>Disponible para trabajar</Badge>
+            <a></a>
+    	    
+        </a>
+        <h2 class="text-xl opacity-65">
+          +3 años de experiencia. Desarrollador Web, Diseñador Gráfico y
+          Productor Musical. De Villa Constitución, Argentina 🇦🇷 . Especializado
+          en la realización y el desarrollo de actividades creativas.
+        </h2>
+
+        <ul></ul>
+      </h1>
+    </section>
+  </main>
 </Layout>

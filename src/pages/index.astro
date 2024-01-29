@@ -6,11 +6,17 @@ import LinkedInIcon from "../icons/LinkedIn.astro";
 import GitHubIcon from "../icons/GitHub.astro";
 import MailIcon from "../icons/Mail.astro";
 import SocialPill from "../icons/SocialPill.astro";
+
+import SectionContainer from "../components/SectionContainer.astro";
+import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
 ---
 
-<Layout title="Iñaki Goicoechea - Desarrollador Web, Diseñador Gráfico y Productor Musical">
-  <main>
-    <section class="w-full lg:w-[740px] mx-auto py-44">
+<Layout
+  title="Iñaki Goicoechea - Desarrollador Web, Diseñador Gráfico y Productor Musical"
+>
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-32">
       <img class="rounded-full size-12 mb-4" src="/bsk.jpg" alt="bskimage" />
       <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
         Iñaki Goicoechea <a
@@ -22,32 +28,50 @@ import SocialPill from "../icons/SocialPill.astro";
           <Badge>Disponible para trabajar</Badge>
           <a></a>
         </a>
-        <h2 class="text-2xl text-wrap">
-          <span>+3 años de experiencia.</span>
-          <span class="text-yellow-200"
-            >Desarrollador Web, Diseñador Gráfico y Productor Musical.</span
-          > <span class="opacity-80">De Villa Constitución, </span><span class="text-sky-400">Argentina 🇦🇷</span
-          ><span class="opacity-80">. Especializado en la realización y el desarrollo de actividades
-			creativas.</span>
-        </h2>
-
-        <nav class="flex gap-x-4 mt-8">
-          <SocialPill
-            href="https://www.linkedin.com/in/i%C3%B1aki-goicoechea-4636b9236/"
-          >
-            <LinkedInIcon class="size-6" />
-            LinkedIn
-          </SocialPill>
-          <SocialPill href="https://github.com/bskgoico">
-            <GitHubIcon class="size-6" />
-            GitHub
-          </SocialPill>
-          <SocialPill href="">
-            <MailIcon class="size-6" />
-            igoico10@gmail.com
-          </SocialPill>
-        </nav>
       </h1>
-    </section>
+      <h2 class="text-2xl text-wrap">
+        <span>+3 años de experiencia.</span>
+        <span class="text-yellow-200"
+          >Desarrollador Web, Diseñador Gráfico y Productor Musical.</span
+        >
+        <span class="opacity-80">De Villa Constitución,</span><span
+          class="text-sky-400">Argentina 🇦🇷</span
+        ><span class="opacity-80"
+          >. Especializado en la realización y el desarrollo de actividades
+          creativas.</span
+        >
+      </h2>
+
+      <nav class="flex gap-x-4 mt-8">
+        <SocialPill
+          href="https://www.linkedin.com/in/i%C3%B1aki-goicoechea-4636b9236/"
+        >
+          <LinkedInIcon class="size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/bskgoico">
+          <GitHubIcon class="size-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="">
+          <MailIcon class="size-6" />
+          igoico10@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+	<SectionContainer id="experiencia">
+		<h2 class="text 3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80">
+			Experiencia Laboral
+		</h2>
+		<Experience />
+	</SectionContainer>
+
+	<SectionContainer id="proyectos">
+		<h2 class="text 3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80">
+			Proyectos
+		</h2>
+		<Projects />
+	</SectionContainer>
   </main>
 </Layout>

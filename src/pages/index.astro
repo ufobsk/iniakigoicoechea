@@ -2,6 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../icons/LinkedIn.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+import SocialPill from "../icons/SocialPill.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -19,13 +22,24 @@ import Badge from "../components/Badge.astro";
             <a></a>
     	    
         </a>
-        <h2 class="text-xl opacity-65">
-          +3 años de experiencia. Desarrollador Web, Diseñador Gráfico y
-          Productor Musical. De Villa Constitución, Argentina 🇦🇷 . Especializado
+        <h2 class="text-2xl opacity-90 text-wrap">
+          <span>+3 años de experiencia.</span> <span class="text-yellow-200">Desarrollador Web, Diseñador Gráfico y
+			Productor Musical.</span> De Villa Constitución, <span class="text-sky-400">Argentina 🇦🇷</span>. Especializado
           en la realización y el desarrollo de actividades creativas.
         </h2>
 
-        <ul></ul>
+        <nav class="flex gap-x-4 mt-8">
+			
+				<SocialPill href="https://www.linkedin.com/in/i%C3%B1aki-goicoechea-4636b9236/">
+					<LinkedInIcon class="w-6 h-6"/>
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/bskgoico">
+					<GitHubIcon class="w-6 h-6"/>
+					GitHub
+				</SocialPill>			
+			
+		</nav>
       </h1>
     </section>
   </main>

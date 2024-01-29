@@ -4,6 +4,8 @@ import NextJSIcon from "../icons/NextJS.astro";
 import TailwindIcon from "../icons/Tailwind.astro";
 import JavaScriptIcon from "../icons/JavaScript.astro";
 import ReactIcon from "../icons/React.astro";
+import BootstrapIcon from "../icons/Bootstrap.astro";
+import FirebaseIcon from "../icons/Firebase.astro";
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
@@ -27,6 +29,16 @@ const TAGS = {
     class: "bg-[#37546e] text-white",
     icon: ReactIcon,
   },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    class: "bg-[#2a143f] text-white",
+    icon: BootstrapIcon,
+  },
+  FIREBASE: {
+    name: "Firebase",
+    class: "bg-[#663400] text-white",
+    icon: FirebaseIcon,
+  },
 }
 const PROJECTS = [
   {
@@ -45,7 +57,7 @@ const PROJECTS = [
     link: "https://adventjs.dev",
     github: "https://github.com/bskgoico/bsk-beats",
     image: "/bskbeats.jpg",
-    tags: [TAGS.REACT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.BOOTSTRAP, TAGS.FIREBASE],
   },
 ]
 ---

@@ -4,42 +4,49 @@ import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
 import LinkedInIcon from "../icons/LinkedIn.astro";
 import GitHubIcon from "../icons/GitHub.astro";
+import MailIcon from "../icons/Mail.astro";
 import SocialPill from "../icons/SocialPill.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Iñaki Goicoechea - Desarrollador Web, Diseñador Gráfico y Productor Musical">
   <main>
     <section class="w-full lg:w-[740px] mx-auto py-44">
+      <img class="rounded-full size-12 mb-4" src="/bsk.jpg" alt="bskimage" />
       <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
         Iñaki Goicoechea <a
           href="https://www.linkedin.com/in/i%C3%B1aki-goicoechea-4636b9236/"
-		  target="_blank"
-		  rel="noopener"
-		  class="flex justify-center items-center"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
         >
-    	    
-            <Badge>Disponible para trabajar</Badge>
-            <a></a>
-    	    
+          <Badge>Disponible para trabajar</Badge>
+          <a></a>
         </a>
         <h2 class="text-2xl opacity-90 text-wrap">
-          <span>+3 años de experiencia.</span> <span class="text-yellow-200">Desarrollador Web, Diseñador Gráfico y
-			Productor Musical.</span> De Villa Constitución, <span class="text-sky-400">Argentina 🇦🇷</span>. Especializado
-          en la realización y el desarrollo de actividades creativas.
+          <span>+3 años de experiencia.</span>
+          <span class="text-yellow-200"
+            >Desarrollador Web, Diseñador Gráfico y Productor Musical.</span
+          > De Villa Constitución, <span class="text-sky-400">Argentina 🇦🇷</span
+          >. Especializado en la realización y el desarrollo de actividades
+          creativas.
         </h2>
 
         <nav class="flex gap-x-4 mt-8">
-			
-				<SocialPill href="https://www.linkedin.com/in/i%C3%B1aki-goicoechea-4636b9236/">
-					<LinkedInIcon class="w-6 h-6"/>
-					LinkedIn
-				</SocialPill>
-				<SocialPill href="https://github.com/bskgoico">
-					<GitHubIcon class="w-6 h-6"/>
-					GitHub
-				</SocialPill>			
-			
-		</nav>
+          <SocialPill
+            href="https://www.linkedin.com/in/i%C3%B1aki-goicoechea-4636b9236/"
+          >
+            <LinkedInIcon class="w-6 h-6" />
+            LinkedIn
+          </SocialPill>
+          <SocialPill href="https://github.com/bskgoico">
+            <GitHubIcon class="w-6 h-6" />
+            GitHub
+          </SocialPill>
+          <SocialPill href="">
+            <MailIcon class="w-6 h-6" />
+            igoico10@gmail.com
+          </SocialPill>
+        </nav>
       </h1>
     </section>
   </main>
